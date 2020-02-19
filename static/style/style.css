@@ -1,0 +1,288 @@
+.background{
+    background-color: rgba(10, 10, 20, 0.9);  
+}
+
+/* PROGRESS BAR >>>>>>>>>>>>>>>>>>>>>>  */
+.demo-wrapper {
+	width: 50%;
+	margin: auto;
+}
+.html5-progress-bar progress {
+	border: 0;
+	width: 100%;
+	height: 18px;
+  border-radius: 9px;
+}
+.html5-progress-bar .progress-value {
+  position: absolute;
+  text-align: left;
+  line-height: 20px;
+  font-size: .8em;
+  font-weight: bolder;
+  color: rgb(255, 245, 225);
+  text-shadow: 0 0 2px rgba(10,10,10, 0.8);
+  height: 18px;
+  left: 49%;
+}
+.html5-progress-bar progress::-webkit-progress-bar {
+	border-radius: 9px;
+}
+.html5-progress-bar progress::-webkit-progress-value {
+  background: #ffcd00e6;
+	background: linear-gradient(to left bottom, #df830bc0 0%,#ffcd00e6 100%);
+	background: -moz-linear-gradient(left bottom,  #df830bc0 0%,#ffcd00e6 100%);
+	background: -webkit-gradient(linear, left bottom, left bottom, color-stop(0%,#df830bc0), color-stop(100%,#ffcd00e6));
+	background: -webkit-linear-gradient(left bottom,  #df830bc0 0%,#ffcd00e6 100%);
+	background: -o-linear-gradient(left bottom,  #df830bc0 0%,#ffcd00e6 100%);
+  background: -ms-linear-gradient(left bottom,  #df830bc0 0%,#ffcd00e6 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#df830bc0', endColorstr='#ffcd00e6',GradientType=0 );
+	border-radius: 9px;
+}
+.html5-progress-bar progress::-moz-progress-bar {
+	background: #ffcd00e6;
+	background: -moz-linear-gradient(left bottom,  #df830bc0 0%,#ffcd00e6 100%);
+	background: -webkit-gradient(linear, left bottom, left bottom, color-stop(0%,#df830bc0), color-stop(100%,#ffcd00e6));
+	background: -webkit-linear-gradient(left bottom,  #df830bc0 0%,#ffcd00e6 100%);
+	background: -o-linear-gradient(left bottom,  #df830bc0 0%,#ffcd00e6 100%);
+	background: -ms-linear-gradient(left bottom,  #df830bc0 0%,#ffcd00e6 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#df830bc0', endColorstr='#ffcd00e6',GradientType=0 );
+	border-radius: 9px;
+}
+/* <<<<<<<<<<<<<<<<<<<<<<<  PROGRESS BAR */
+
+.container-1 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+}
+
+.load-game{
+  display: block;
+  align-items: center;
+  justify-content: center;
+  width: 75%;
+  height: 75%;
+  margin: auto;
+}
+
+.load-game img{
+  margin: auto;
+  width: 85%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.endload{
+  display: none;
+}
+
+
+.firstgame-hide {
+  display: none;
+}
+.firstgame-start {
+  display: grid;
+  position: relative;
+  border: 1px solid ;
+  width: 65%;
+  height: 85%;
+  margin: 5 auto;
+  text-align: center;
+  box-shadow: 0px 0px 15px rgba(10, 10, 20, 0.8),
+              2px  2px 2px 2px inset rgba(0, 35, 107, 0.05),
+              -2px -2px 5px 5px inset rgba(0, 35, 107, 0.15);  
+}
+
+.headblock {
+  display: block;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  background: url('../img/BJ/bg_stars.png') center , rgba(255, 240, 220, 0.2);
+  background-blend-mode: overlay;
+  background-size: 20%;
+  border-radius: 5px 5px 0 0;
+}
+
+
+.blackjack-logo{
+  padding: 10px;
+  font-weight: bold;
+  font-size: 600%;
+  height: 77%;
+  color: rgba(255, 240, 220, 0.9);
+}
+
+.blackjack-result {
+  padding: 5px;
+  text-align: center;
+  vertical-align: middle;
+  top: 80%;
+  background: rgba(255, 240, 220, 0.9);
+  height: 23%;
+  font-size: 180%;
+  font-weight: bolder;
+  color: rgba(10, 10, 20, 0.8);  
+}
+
+
+
+
+.flex-box-bj-row-1, .flex-box-bj-row-2, .flex-box-bj-row-3{
+    display: flex;
+    padding: 5px;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.flex-box-bj-row-1, .flex-box-bj-row-2{
+  background: linear-gradient(to right, rgba(0, 70, 10, 0.5),rgba(0, 140, 20, 0.5),rgba(0, 70, 10, 0.5)), url('../img/BJ/table-bj.jpg') center;
+  color: rgb(255, 240, 220);
+  justify-content: space-around;
+  text-shadow: 2px 2px 2px rgba(10, 20, 10, 0.8);
+  padding: 5px;
+}
+
+.flex-box-bj-row-3{
+  background: linear-gradient(to right, rgba(0, 30, 3, 0.6),rgba(0, 80, 10, 0.6),rgb(0, 30, 3, 0.6)), url('../img/BJ/table-bj.jpg') center;
+  color: rgb(255, 240, 220);
+  justify-content: space-around;
+  padding: 10px;
+}
+
+.flex-box-bj-row-1 div{
+  padding: 10px;
+  flex: 1;
+  text-align: center;
+  height: 360px;
+}
+
+.flex-box-bj-row-1 img{
+  width: 25%;
+  padding: 5px;
+}
+
+.flex-box-bj-row-2 button {
+  width: 100px;
+}
+
+table, th, td{
+  color: rgb(255, 240, 220);
+  text-shadow: 1px 1px 3px rgb(0, 30, 3, 0.7);
+  text-align: center;
+  border: 2px solid rgba(0, 30, 3, 0.7);
+  padding: 5px;
+}
+
+table{
+  align-self: center;
+  width: 330px;
+  background: rgb(255, 240, 220, 0.2);
+}
+
+
+/*animation by id*/
+/*config*/
+@keyframes shake_button {
+  0% { 
+    transform: rotate(2deg);
+  }
+  25% {
+    transform: rotate(0deg);
+   }
+  50% {
+   transform: rotate(-2deg);
+  }
+  75% {
+    transform: rotate(3deg);
+  }
+
+  100% {
+    transform: rotate(0deg);
+  }
+}
+
+@keyframes shake_img {
+    0% { 
+      transform: rotate(2deg);
+      position: relative;
+      top: 5px;
+    }
+    10% {
+      transform: rotate(0deg);
+      position: relative;
+      top: -10px;
+     }
+    20% {
+     transform: rotate(-2deg);
+     position: relative;
+     top: 0px;
+    }
+    30% {
+      transform: rotate(3deg);
+      position: relative;
+      top: -15px;
+    }
+    40% {
+      transform: rotate(0deg);
+      position: relative;
+      top: 0px;
+    }
+    50% { 
+        transform: rotate(2deg);
+        position: relative;
+        top: 5px;
+      }
+    60% {
+        transform: rotate(0deg);
+        position: relative;
+        top: -5px;
+       }
+    75% {
+       transform: rotate(-2deg);
+       position: relative;
+       top: -10px;
+      }
+    90% {
+        transform: rotate(3deg);
+        position: relative;
+        top: 2px;
+      }
+    
+    100% {
+        transform: rotate(0deg);
+        position: relative;
+        top: 0px;
+      }
+  }
+/*write your id for element*/
+#button:hover {
+    animation: shake_button 500ms ease-in-out forwards;
+  }
+
+#blackjack-hit-button:hover{
+  animation: shake_button 500ms ease-in-out forwards;
+}
+
+#blackjack-stand-button:hover{
+  animation: shake_button 500ms ease-in-out forwards;
+}
+
+#blackjack-refresh-button:hover{
+  animation: shake_button 500ms ease-in-out forwards;
+}
+
+#rock:hover {
+  animation: shake_img 700ms ease-in-out forwards;
+}
+
+#paper:hover {
+    animation: shake_img 700ms ease-in-out forwards;
+  }
+
+#scissors:hover {
+    animation: shake_img 700ms ease-in-out forwards;
+  }
+ /*end animation*/ 
