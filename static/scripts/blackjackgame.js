@@ -1,6 +1,6 @@
 //BlackJack 
 let blackjackGame = {
-    'player_1': {'scoreSpan': '#your-blackjack-result', 'div': '#your-box', 'score': 0},
+    'player': {'scoreSpan': '#your-blackjack-result', 'div': '#your-box', 'score': 0},
     'dealer': {'scoreSpan': '#dealer-blackjack-result', 'div': '#dealer-box', 'score': 0},
     'cards': ['2b', '3b', '4b', '5b', '6b', '7b', '8b', '9b', '10b', 'Jb', 'Qb', 'Kb', 'Ab', 
               '2c', '3c', '4c', '5c', '6c', '7c', '8c', '9c', '10c', 'Jc', 'Qc', 'Kc', 'Ac', 
@@ -17,12 +17,12 @@ let blackjackGame = {
     'turnsOver': false,
 };
 
-const PLAYER_1 = blackjackGame['player_1'];
+const PLAYER = blackjackGame['player'];
 const DEALER = blackjackGame['dealer'];
 
-const hitSound = new Audio('blackjack_assets/sounds/swish.m4a');
-const winSound = new Audio('blackjack_assets/sounds/cash.mp3');
-const lossSound = new Audio('blackjack_assets/sounds/aww.mp3');
+const hitSound = new Audio('static/sounds/swish.m4a');
+const winSound = new Audio('static/sounds/cash.mp3');
+const lossSound = new Audio('static/sounds/aww.mp3');
 
 document.querySelector('#blackjack-hit-button').addEventListener('click', blackjackHit);
 document.querySelector('#blackjack-stand-button').addEventListener('click', dealerLogic);
@@ -32,9 +32,9 @@ document.querySelector('#blackjack-refresh-button').addEventListener('click', bl
 function blackjackHit() {
     if (blackjackGame['isStand'] === false){
     let card = randomCard();
-    showCard(card, PLAYER_1);
-    updateScore(card, PLAYER_1);
-    showScore(PLAYER_1);
+    showCard(card, PLAYER);
+    updateScore(card, PLAYER);
+    showScore(PLAYER);
     }
 
 }
@@ -47,7 +47,7 @@ function randomCard(){
 function showCard(card, activePlayer){
     if (activePlayer['score'] <= 21) {
         let cardImage = document.createElement('img');
-        cardImage.src=`blackjack_assets/images/${card}.png`;
+        cardImage.src=`static/img/BJ/CARDS/${card}.png`;
         document.querySelector(activePlayer['div']).appendChild(cardImage);
         hitSound.play();
     }
@@ -68,7 +68,7 @@ function blackjackRefresh(){
             dealerImages[i].remove();
         }
     
-        PLAYER_1['score'] = 0;
+        PLAYER['score'] = 0;
         DEALER['score'] = 0;
     
         document.querySelector('#your-blackjack-result').textContent = 0;
@@ -135,27 +135,27 @@ async function dealerLogic() {
 function computeWinner(){
     let winner;
 
-    if (PLAYER_1['score'] <= 21) {
+    if (PLAYER['score'] <= 21) {
         // condition: higher score that dealer or when dealer busts but player are 21
-        if (PLAYER_1['score'] > DEALER['score'] || DEALER['score'] > 21) {
+        if (PLAYER['score'] > DEALER['score'] || DEALER['score'] > 21) {
             blackjackGame['wins']++;
-            winner = PLAYER_1;
+            winner = PLAYER;
 
-        } else if (PLAYER_1['score'] < DEALER['score']) {
+        } else if (PLAYER['score'] < DEALER['score']) {
             blackjackGame['losses']++;
             winner = DEALER;         
 
-        } else if (PLAYER_1['score'] === DEALER['score']) {
+        } else if (PLAYER['score'] === DEALER['score']) {
             blackjackGame['draws']++;
         }
 
     // condition: when player busts but dealer dosen't   
-    } else if (PLAYER_1['score'] > 21 && DEALER['score'] <= 21) {
+    } else if (PLAYER['score'] > 21 && DEALER['score'] <= 21) {
         blackjackGame['losses']++;
         winner = DEALER;
     
     // condition: when player AND the dealer busts
-    } else if (PLAYER_1['score'] > 21 && DEALER['score'] > 21) {
+    } else if (PLAYER['score'] > 21 && DEALER['score'] > 21) {
         blackjackGame['draws']++;
     }
 
@@ -167,7 +167,7 @@ function showResult(winner) {
 
     if (blackjackGame['turnsOver'] === true) {
 
-        if (winner === PLAYER_1) {
+        if (winner === PLAYER) {
             document.querySelector('#wins').textContent = blackjackGame['wins'];
             message = 'You won!';
             messageColor = 'rgb(0, 140, 20)';
