@@ -3,7 +3,7 @@ $(document).ready(() => {
     else {
         let progressbar = $('#progressbar'),
             max = progressbar.attr('max'),
-            time = (100 / max) * 5,
+            time = (250 / max) * 5,
             value = progressbar.val();
 
         let loading = () => {
