@@ -1,12 +1,13 @@
-# BlackJack
+# **_BlackJack**
+=====================
 
-Blackjack is the American version of a popular global banking game known as Twenty-One, whose relatives include Pontoon and Vingt-et-Un. It is a comparing card game between one or more players and a dealer, where each player in turn competes against the dealer. Players do not compete against each other. It is played with one or more decks of 52 cards, and is the most widely played casino banking game in the world.
+    Blackjack is the American version of a popular global banking game known as Twenty-One, whose relatives include Pontoon and Vingt-et-  Un. It is a comparing card game between one or more players and a dealer, where each player in turn competes against the dealer. Players do not compete against each other. It is played with one or more decks of 52 cards, and is the most widely played casino banking game in the world.
 
 
-Player decisions
+**_Player decisions**
 
-After receiving an initial two cards, the player has up to two options: "hit", "stand". Each option has a corresponding hand signal. Original games give the player a four standard options: "hit", "stand", "double down", or "split" (Some games give the player a fifth option, "surrender").
+    After receiving an initial two cards, the player has up to **two** options: "**hit**", "**stand**". Each option has a corresponding hand signal. Original games give the player a four standard options: "hit", "stand", "double down", or "split" _(Some games give the player a fifth option, "surrender")._
 
-Hit: Take another card from the dealer.
+**_Hit**: Take another card from the dealer.
 
-Stand: Take no more cards, also known as "stand pat", "stick", or "stay".
+**_Stand**: Take no more cards, also known as "stand pat", "stick", or "stay".
