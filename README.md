@@ -8,5 +8,5 @@
 
 >After receiving an initial two cards, the player has up to **two** options: "**hit**", "**stand**". Each option has a corresponding   >hand signal. Original games give the player a four standard options: "hit", "stand", "double down", or "split" _(Some games give the >player a fifth option, "surrender")._
 
-**_Hit_**: Take another card from the dealer.
-**_Stand_**: Take no more cards, also known as "stand pat", "stick", or "stay".
+* **_Hit_**: Take another card from the dealer.
+* **_Stand_**: Take no more cards, also known as "stand pat", "stick", or "stay".
