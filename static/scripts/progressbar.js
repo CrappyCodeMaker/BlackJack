@@ -1,4 +1,4 @@
-$(document).ready( () => {
+$(document).ready(() => {
     if (!Modernizr.meter) { alert('Извините, но Ваш браузер не поддерживает HTML5 прогресс бар!'); }
     else {
         let progressbar = $('#progressbar'),
@@ -12,10 +12,10 @@ $(document).ready( () => {
 
             $('.progress-value').html(value + '%');
 
-            if (value == max) { 
-                clearInterval(animate); 
-                document.querySelector("#loadgame").className='endload';
-                document.querySelector("#firstgame").className='firstgame-start';
+            if (value == max) {
+                clearInterval(animate);
+                document.querySelector("#loadgame").className = 'endload';
+                document.querySelector("#firstgame").className = 'firstgame-start';
             }
         };
 
