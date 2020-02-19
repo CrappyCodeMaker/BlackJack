@@ -98,6 +98,7 @@ function showScore(activePlayer) {
 //IO for Daeler >>>>>
 function sleep(ms) { return new Promise(resolve => setTimeout(resolve, ms)); }
 
+//Click "Stand"
 async function dealerLogic() {
     blackjackGame['isStand'] = true;
 
@@ -136,7 +137,7 @@ function computeWinner() {
     return winner;
 }
 
-//Show resul in top div
+//Show result in a top div
 function showResult(winner) {
     let message, messageColor;
 
