@@ -78,7 +78,6 @@
   display: none;
 }
 
-
 .firstgame-hide {
   display: none;
 }
@@ -106,7 +105,6 @@
   border-radius: 5px 5px 0 0;
 }
 
-
 .blackjack-logo{
   padding: 10px;
   font-weight: bold;
@@ -126,9 +124,6 @@
   font-weight: bolder;
   color: rgba(10, 10, 20, 0.8);  
 }
-
-
-
 
 .flex-box-bj-row-1, .flex-box-bj-row-2, .flex-box-bj-row-3{
     display: flex;
@@ -168,6 +163,42 @@
   width: 100px;
 }
 
+.btn-hit, .btn-stand, .btn-refresh {
+  color: rgb(255, 245, 235);
+  padding: .5rem; 
+  line-height: 1.5;
+  border-radius: .3rem;
+  text-align: center;
+  font: 200 1.25rem Arial;
+  text-shadow: 0 0 3px rgba(150, 93, 93, 0.8);
+}
+
+.btn-hit {
+  background: rgb(0, 125, 255);
+  border-color: rgb(0, 125, 255);;
+}
+.btn-hit:hover{
+  background-color:rgb(0, 105, 220);
+  border-color:rgb(0, 100, 205)
+}
+.btn-stand {
+  background: rgb(235, 180, 10); 
+  border-color: rgb(235, 180, 10); 
+}
+.btn-stand:hover {
+  background: rgb(205, 155, 5);
+  border-color: rgb(195, 145, 0); 
+}
+
+.btn-refresh {
+  background: rgb(108, 117, 125);
+  border-color: rgb(108, 117, 125);
+}
+.btn-refresh:hover {
+  background: rgb(90, 98, 104);
+  border-color: rgb(84, 91, 98);
+}
+
 table, th, td{
   color: rgb(255, 240, 220);
   text-shadow: 1px 1px 3px rgb(0, 30, 3, 0.7);
@@ -182,85 +213,27 @@ table{
   background: rgb(255, 240, 220, 0.2);
 }
 
-
 /*animation by id*/
 /*config*/
 @keyframes shake_button {
   0% { 
-    transform: rotate(2deg);
+    transform: rotate(.7deg);
   }
   25% {
     transform: rotate(0deg);
    }
   50% {
-   transform: rotate(-2deg);
+   transform: rotate(-.7deg);
   }
   75% {
-    transform: rotate(3deg);
+    transform: rotate(1.5deg);
   }
-
   100% {
     transform: rotate(0deg);
   }
 }
 
-@keyframes shake_img {
-    0% { 
-      transform: rotate(2deg);
-      position: relative;
-      top: 5px;
-    }
-    10% {
-      transform: rotate(0deg);
-      position: relative;
-      top: -10px;
-     }
-    20% {
-     transform: rotate(-2deg);
-     position: relative;
-     top: 0px;
-    }
-    30% {
-      transform: rotate(3deg);
-      position: relative;
-      top: -15px;
-    }
-    40% {
-      transform: rotate(0deg);
-      position: relative;
-      top: 0px;
-    }
-    50% { 
-        transform: rotate(2deg);
-        position: relative;
-        top: 5px;
-      }
-    60% {
-        transform: rotate(0deg);
-        position: relative;
-        top: -5px;
-       }
-    75% {
-       transform: rotate(-2deg);
-       position: relative;
-       top: -10px;
-      }
-    90% {
-        transform: rotate(3deg);
-        position: relative;
-        top: 2px;
-      }
-    
-    100% {
-        transform: rotate(0deg);
-        position: relative;
-        top: 0px;
-      }
-  }
 /*write your id for element*/
-#button:hover {
-    animation: shake_button 500ms ease-in-out forwards;
-  }
 
 #blackjack-hit-button:hover{
   animation: shake_button 500ms ease-in-out forwards;
@@ -273,16 +246,4 @@ table{
 #blackjack-refresh-button:hover{
   animation: shake_button 500ms ease-in-out forwards;
 }
-
-#rock:hover {
-  animation: shake_img 700ms ease-in-out forwards;
-}
-
-#paper:hover {
-    animation: shake_img 700ms ease-in-out forwards;
-  }
-
-#scissors:hover {
-    animation: shake_img 700ms ease-in-out forwards;
-  }
  /*end animation*/ 
