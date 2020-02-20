@@ -1,5 +1,5 @@
 $(document).ready(() => {
-    if (!Modernizr.meter) { alert('Извините, но Ваш браузер не поддерживает HTML5 прогресс бар!'); }
+    if (!Modernizr.meter) { alert('Sory, but your browser doesn`t support HTML5 progress bar!'); }
     else {
         let progressbar = $('#progressbar'),
             max = progressbar.attr('max'),
