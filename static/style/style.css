@@ -172,6 +172,12 @@
   font: 200 1.25rem Arial;
   text-shadow: 0 0 3px rgba(150, 93, 93, 0.8);
 }
+.btn-hit:active, .btn-stand:active, .btn-refresh:active,
+.btn-hit:focus, .btn-stand:focus, .btn-refresh:focus {
+  outline: none !important;
+  outline-color: transparent !important;
+  outline-style: none !important;
+}
 
 .btn-hit {
   background: rgb(0, 125, 255);
