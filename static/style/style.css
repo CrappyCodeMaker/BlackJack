@@ -169,7 +169,7 @@ padding: .5rem;
 line-height: 1.5;
 border-radius: .3rem;
 text-align: center;
-font: 200 1.25rem Arial;
+font: 1.05rem Arial;
 text-shadow: 0 0 3px rgba(150, 93, 93, 0.8);
 }
 
@@ -218,6 +218,7 @@ table{
 align-self: center;
 width: 330px;
 background: rgb(255, 240, 220, 0.2);
+table-layout: fixed;
 }
 
 /*animation by id*/
