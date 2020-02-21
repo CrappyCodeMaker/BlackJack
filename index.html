@@ -1,5 +1,4 @@
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -9,11 +8,9 @@
     <title>JUST BLACK-JACK</title>
 </head>
 
-<body class="background">
+<body>
 
     <div class="container-1">
-
-
 
         <div class="load-game" id="loadgame"><img src="static/img/BJ/BJ_logo.png" width="75%">
             <div class="demo-wrapper html5-progress-bar">
@@ -29,48 +26,47 @@
                 <div class="blackjack-logo">BLACK JACK</div>
                 <div class="blackjack-result"><span id="blackjack-result">Let's play!</span></div>
             </div>
+            <div class="flex-box-bj-main">
+                <div class="flex-box-bj-row-1">
+                    <div id="your-box">
+                        <h4>Player: <span id="your-blackjack-result">0</span></h4>
+                    </div>
 
-            <div class="flex-box-bj-row-1">
-                <div id="your-box">
-                    <h4>Player: <span id="your-blackjack-result">0</span></h4>
+                    <div id="dealer-box">
+                        <h4>Dealer: <span id="dealer-blackjack-result">0</span></h4>
+                    </div>
                 </div>
 
-                <div id="dealer-box">
-                    <h4>Dealer: <span id="dealer-blackjack-result">0</span></h4>
+                <div class="flex-box-bj-row-2">
+                    <div>
+                        <button id="blackjack-hit-button" class="btn-hit">Hit</button>
+                        <button id="blackjack-stand-button" class="btn-stand">Stand</button>
+                        <button id="blackjack-refresh-button" class="btn-refresh">Refresh</button>
+                    </div>
+                </div>
+
+                <div class="flex-box-bj-row-3">
+                    <table>
+                        <tr>
+                            <th>Wins</th>
+                            <th>Losses</th>
+                            <th>Draws</th>
+                        </tr>
+
+                        <tr>
+                            <td><span id="wins">0</span></td>
+                            <td><span id="losses">0</span></td>
+                            <td><span id="draws">0</span></td>
+                        </tr>
+                    </table>
                 </div>
             </div>
-
-            <div class="flex-box-bj-row-2">
-                <div>
-                    <button id="blackjack-hit-button" class="btn-hit">Hit</button>
-                    <button id="blackjack-stand-button" class="btn-stand">Stand</button>
-                    <button id="blackjack-refresh-button" class="btn-refresh">Refresh</button>
-                </div>
-            </div>
-
-            <div class="flex-box-bj-row-3">
-                <table>
-                    <tr>
-                        <th>Wins</th>
-                        <th>Losses</th>
-                        <th>Draws</th>
-                    </tr>
-
-                    <tr>
-                        <td><span id="wins">0</span></td>
-                        <td><span id="losses">0</span></td>
-                        <td><span id="draws">0</span></td>
-                    </tr>
-                </table>
-            </div>
-
         </div>
     </div>
+
     <script src="static/scripts/jquery.js" type="text/javascript"></script>
     <script src="static/scripts/modernizr.js" type="text/javascript"></script>
     <script src="static/scripts/progressbar.js"></script>
     <script src="static/scripts/blackjackgame.js"></script>
-	
 </body>
-
 </html>
