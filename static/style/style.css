@@ -1,5 +1,6 @@
 body {
   background: linear-gradient(to bottom, rgb(32, 32, 32), rgb(17, 17, 25));
+  background-blend-mode: screen;
 }
 
 /* PROGRESS BAR >>>>>>>>>>>>>>>>>>>>>>  */
@@ -55,7 +56,6 @@ display: flex;
 align-items: center;
 justify-content: center;
 height: 100%;
-z-index: 5;
 }
 
 .load-game{
